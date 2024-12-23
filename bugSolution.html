@@ -1,0 +1,22 @@
+To fix this, ensure that your Tailwind CSS configuration is set up correctly and that there are no CSS conflicts.  Check your `tailwind.config.js` (or equivalent) file to confirm that the paths are set correctly.
+
+In addition to verifying the Tailwind configuration, check for any conflicting CSS styles that might be overriding your Tailwind classes. Add specificity to your styles or disable conflicting rules if needed. Here's the corrected code:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Button</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <div class="flex items-center justify-center h-screen">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      Button
+    </button>
+  </div>
+</body>
+</html>
+```
